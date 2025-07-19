@@ -1,0 +1,17 @@
+﻿using Microsoft.EntityFrameworkCore;
+using TutorialsAPI.Models;
+
+namespace TutorialsAPI.Data
+{
+   
+        public class CourseContext : DbContext
+        {
+            public CourseContext(DbContextOptions<CourseContext> options)
+                : base(options)
+            {
+            }
+
+            public DbSet<Course> Courses { get; set; }
+        }
+    
+}
