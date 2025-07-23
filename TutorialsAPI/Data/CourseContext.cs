@@ -12,6 +12,9 @@ namespace TutorialsAPI.Data
             }
 
             public DbSet<Course> Courses { get; set; }
-        }
-    
+            public DbSet<Duration> Durations { get; set; }
+            public DbSet<Teacher> Teachers { get; set; }
+
+    }
+
 }
