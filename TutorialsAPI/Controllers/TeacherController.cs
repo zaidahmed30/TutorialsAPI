@@ -11,7 +11,6 @@ namespace TutorialsAPI.Controllers
     public class TeacherController : Controller
     {
         private readonly CourseContext _context;
-
         public TeacherController(CourseContext context)
         {
             _context = context;
